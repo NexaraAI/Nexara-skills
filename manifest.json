@@ -1,0 +1,924 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-03-19",
+  "channels": {
+    "stable": [
+      "base64_tool",
+      "clipboard",
+      "code_exec",
+      "command",
+      "csv_query",
+      "currency",
+      "download",
+      "email_send",
+      "file_ops",
+      "finance",
+      "git_ops",
+      "hash_tool",
+      "image_tools",
+      "ip_tools",
+      "json_query",
+      "news",
+      "password_gen",
+      "qr_code",
+      "regex_tool",
+      "rss_feed",
+      "sqlite_query",
+      "system_info",
+      "text_diff",
+      "text_tools",
+      "timezone",
+      "translate",
+      "url_shorten",
+      "weather",
+      "web_scrape",
+      "web_search",
+      "webhook",
+      "alarm_set",
+      "battery",
+      "call_log",
+      "camera",
+      "device_control",
+      "media_control",
+      "screen_capture",
+      "sms",
+      "termux_notify",
+      "tts_speak",
+      "wifi_scan",
+      "apt_manage",
+      "cron_manage",
+      "disk_analyze",
+      "docker_ops",
+      "env_manage",
+      "log_tail",
+      "nginx_manage",
+      "process_monitor",
+      "python_env",
+      "ssh_exec",
+      "systemd",
+      "ufw_firewall",
+      "event_log",
+      "powershell",
+      "registry_read",
+      "windows_info",
+      "windows_notify",
+      "windows_services",
+      "wsl_exec",
+      "applescript",
+      "brew",
+      "disk_util_mac",
+      "launchctl",
+      "open_url_mac",
+      "pbclipboard",
+      "screen_capture_mac",
+      "markdown_render",
+      "pandas_query",
+      "sqlite_manager",
+      "xml_parse",
+      "yaml_tool",
+      "discord_send",
+      "ntfy_send",
+      "slack_send"
+    ],
+    "beta": [],
+    "dev": []
+  },
+  "skills": {
+    "base64_tool": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/base64_tool.py",
+      "checksum": "sha256:a22c978dbb41f08fe284b1d37370a5d5c84c235294532d4fa0c09e7780b244ae",
+      "platforms": [
+        "all"
+      ],
+      "description": "Base64 Tool",
+      "min_agent": "1.0.0"
+    },
+    "clipboard": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/clipboard.py",
+      "checksum": "sha256:455a012814e4c0c3116803e4a57c880321c7c235da24b665b93b80769d5a017f",
+      "platforms": [
+        "android"
+      ],
+      "description": "Read or write the Android clipboard. Args: text (str opt \u2014 omit to read).",
+      "min_agent": "1.0.0"
+    },
+    "code_exec": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/code_exec.py",
+      "checksum": "sha256:4d6866373410c32fdbbe2752d90f2c28d7a424e79469cb6a014db47b1833e7b1",
+      "platforms": [
+        "all"
+      ],
+      "description": "List all Python scripts saved by the agent.",
+      "min_agent": "1.0.0"
+    },
+    "command": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/command.py",
+      "checksum": "sha256:2110a251369097f1048aff8c6e38020451665603014b36bc12d1af6b5d6cf66a",
+      "platforms": [
+        "all"
+      ],
+      "description": "Execute a whitelisted shell command and return stdout.",
+      "min_agent": "1.0.0"
+    },
+    "csv_query": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/csv_query.py",
+      "checksum": "sha256:b616e2fa38345e7e7b71209146bb4c72fd50b13d7aef54837c123c1a5c07066c",
+      "platforms": [
+        "all"
+      ],
+      "description": "Csv Query",
+      "min_agent": "1.0.0"
+    },
+    "currency": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/currency.py",
+      "checksum": "sha256:bdc80aff4e1050ee3c0dab25abf347ae5e52f607ebaadc1e974178b4a8b96247",
+      "platforms": [
+        "all"
+      ],
+      "description": "Currency",
+      "min_agent": "1.0.0"
+    },
+    "download": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/download.py",
+      "checksum": "sha256:3ff58a2402ab23e1ed6bce13323a365eef9031a29463f9485a39a585b3eddcfa",
+      "platforms": [
+        "all"
+      ],
+      "description": "List all files in the Nexara downloads folder.",
+      "min_agent": "1.0.0"
+    },
+    "email_send": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/email_send.py",
+      "checksum": "sha256:881c556cd7b9dc394d6d6fa7e134df88a1bbdb176aa40b914493d479b2d78f78",
+      "platforms": [
+        "all"
+      ],
+      "description": "Email Send",
+      "min_agent": "1.0.0"
+    },
+    "file_ops": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/file_ops.py",
+      "checksum": "sha256:5c19edd6e2a64546b2acf9df5517d99d3147ba991a1dfb0590cf9bc276cdbb31",
+      "platforms": [
+        "all"
+      ],
+      "description": "Read the contents of a text file. Args: path, max_chars (default 4000).",
+      "min_agent": "1.0.0"
+    },
+    "finance": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/finance.py",
+      "checksum": "sha256:46ab788b3fe2a9ea20124d6a2854acdb06401a095ee82462caad4504e3a2828f",
+      "platforms": [
+        "all"
+      ],
+      "description": "Finance",
+      "min_agent": "1.0.0"
+    },
+    "git_ops": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/git_ops.py",
+      "checksum": "sha256:36793de045f378ebf9340f3f286ef8c01e7352a9a2585dbdc46709b9e5e97ffd",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Git Ops",
+      "min_agent": "1.0.0"
+    },
+    "hash_tool": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/hash_tool.py",
+      "checksum": "sha256:7c4e4ab849377687f3600b6c7bb68fe071cbecbd033abeaa0a4e3f88a9da4b13",
+      "platforms": [
+        "all"
+      ],
+      "description": "Hash Tool",
+      "min_agent": "1.0.0"
+    },
+    "image_tools": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/image_tools.py",
+      "checksum": "sha256:2e464070c04201e74335061705ff5a5a8f86819fdbc9447b8069a780ce15af72",
+      "platforms": [
+        "all"
+      ],
+      "description": "Get detailed information about an image file. Args: path (str).",
+      "min_agent": "1.0.0"
+    },
+    "ip_tools": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/ip_tools.py",
+      "checksum": "sha256:a5d2d2e9b1f343f2340f2341822b76893844a73a991cfad60f54949a9652238f",
+      "platforms": [
+        "all"
+      ],
+      "description": "Get the device",
+      "min_agent": "1.0.0"
+    },
+    "json_query": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/json_query.py",
+      "checksum": "sha256:f37d4bfdeb5dc053ff63a29f8c9eee8d19cb0d719f311c94ec4629f1eb5817cb",
+      "platforms": [
+        "all"
+      ],
+      "description": "Json Query",
+      "min_agent": "1.0.0"
+    },
+    "news": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/news.py",
+      "checksum": "sha256:7cce02d289981ee81c7e40a5ad5faf6f1c4c32a94c7a3505c8323e71a2a57b32",
+      "platforms": [
+        "all"
+      ],
+      "description": "News",
+      "min_agent": "1.0.0"
+    },
+    "password_gen": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/password_gen.py",
+      "checksum": "sha256:18e3f69147da0981072ef56ce17a2d0b8c5a5ef44940f01a80b1968855a0907a",
+      "platforms": [
+        "all"
+      ],
+      "description": "Password Gen",
+      "min_agent": "1.0.0"
+    },
+    "qr_code": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/qr_code.py",
+      "checksum": "sha256:a501e8655f2857f1746a46dd871d7bf88168f91b52b8e2dc0aea80815459b893",
+      "platforms": [
+        "all"
+      ],
+      "description": "Qr Code",
+      "min_agent": "1.0.0"
+    },
+    "regex_tool": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/regex_tool.py",
+      "checksum": "sha256:f188dd1be5bc89eea98f1c9c3029507ab9e4958caa7162a72114190db4dd12f4",
+      "platforms": [
+        "all"
+      ],
+      "description": "Regex Tool",
+      "min_agent": "1.0.0"
+    },
+    "rss_feed": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/rss_feed.py",
+      "checksum": "sha256:180f67c44c0442126bb09e4028e9a666bccf9f51d62edae3a3e5356be6cd68b6",
+      "platforms": [
+        "all"
+      ],
+      "description": "Rss Feed",
+      "min_agent": "1.0.0"
+    },
+    "sqlite_query": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/sqlite_query.py",
+      "checksum": "sha256:5614769de53de332beb385f018e1dc0778e979f46a139f7de9b2d0ede25fea7f",
+      "platforms": [
+        "all"
+      ],
+      "description": "Sqlite Query",
+      "min_agent": "1.0.0"
+    },
+    "system_info": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/system_info.py",
+      "checksum": "sha256:362c081d0fa272f41294df7a0f210d09f64ab1c4be1494841191f61a689b7b55",
+      "platforms": [
+        "all"
+      ],
+      "description": "Full system snapshot: CPU, RAM, disk, network, uptime.",
+      "min_agent": "1.0.0"
+    },
+    "text_diff": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/text_diff.py",
+      "checksum": "sha256:b152ac22098a3b0a0f724cbbd996cb2013c374b9c458dc751ee59047e6847686",
+      "platforms": [
+        "all"
+      ],
+      "description": "Text Diff",
+      "min_agent": "1.0.0"
+    },
+    "text_tools": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/text_tools.py",
+      "checksum": "sha256:208fc033c9cba8bf21625d62731c227764120df01bc60cc4a2227a919aed4913",
+      "platforms": [
+        "all"
+      ],
+      "description": "Hash text or a file. Args: text (str), algorithm (",
+      "min_agent": "1.0.0"
+    },
+    "timezone": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/timezone.py",
+      "checksum": "sha256:dad779faf5d622cda30d14adf9d18d318d026948fa8254ee9d5d5d9f70e6dc98",
+      "platforms": [
+        "all"
+      ],
+      "description": "Timezone",
+      "min_agent": "1.0.0"
+    },
+    "translate": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/translate.py",
+      "checksum": "sha256:35026e3191f0ac9b5cf42744090cad653312e4535593141ee83d418b1ce3a245",
+      "platforms": [
+        "all"
+      ],
+      "description": "Translate",
+      "min_agent": "1.0.0"
+    },
+    "url_shorten": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/url_shorten.py",
+      "checksum": "sha256:af32fb5ec003061bdf960e06666d0e3fb97de765281137ae807d1090d56ac558",
+      "platforms": [
+        "all"
+      ],
+      "description": "Shorten a long URL using TinyURL. Args: url (str), alias (str opt).",
+      "min_agent": "1.0.0"
+    },
+    "weather": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/weather.py",
+      "checksum": "sha256:c6dc29827a562185dc51030b832c7c000ec3c9d0c18a18d56fb1a15006ba4575",
+      "platforms": [
+        "all"
+      ],
+      "description": "Weather",
+      "min_agent": "1.0.0"
+    },
+    "web_scrape": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/web_scrape.py",
+      "checksum": "sha256:5272c893743c5da62a04db0b88db38f28753b3156c0e2313779af9622b2d4979",
+      "platforms": [
+        "all"
+      ],
+      "description": "Web Scrape",
+      "min_agent": "1.0.0"
+    },
+    "web_search": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/web_search.py",
+      "checksum": "sha256:1b3a0f55ca4f3ab949c0870be9c787e392a773c2c1cf46bec012d33ea5b902d7",
+      "platforms": [
+        "all"
+      ],
+      "description": "Search the web using DuckDuckGo. Returns titles, URLs, and snippets.",
+      "min_agent": "1.0.0"
+    },
+    "webhook": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/webhook.py",
+      "checksum": "sha256:6bc57156640f06d6ce89556ead802932480e0e2bdd6449ae45486e40fbbd0f2b",
+      "platforms": [
+        "all"
+      ],
+      "description": "Webhook",
+      "min_agent": "1.0.0"
+    },
+    "alarm_set": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/alarm_set.py",
+      "checksum": "sha256:a251399fa5e9a0070ab1de46b41c415316993f5567f2cf13714d3dcffc75f0e1",
+      "platforms": [
+        "android"
+      ],
+      "description": "Set an Android alarm. Args: hour (int 0-23), minute (int 0-59), message (str opt",
+      "min_agent": "1.0.0"
+    },
+    "battery": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/battery.py",
+      "checksum": "sha256:3259ee8720dabe3bbd24a2a0d4a417358860b53be8bf9e9d2a9b504737766002",
+      "platforms": [
+        "android"
+      ],
+      "description": "Get Android battery percentage, status, and health.",
+      "min_agent": "1.0.0"
+    },
+    "call_log": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/call_log.py",
+      "checksum": "sha256:8d1c174709fd1538f4ee25f45d1a8ba47536386f87523f714732c0c0de4690bb",
+      "platforms": [
+        "android"
+      ],
+      "description": "Read recent call history. Args: limit (int, default 10), type (",
+      "min_agent": "1.0.0"
+    },
+    "camera": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/camera.py",
+      "checksum": "sha256:5ca66243ec1d54e731c794266c74d83473c9481a674002f764103b29b8622352",
+      "platforms": [
+        "android"
+      ],
+      "description": "Take a photo with the device camera. Returns the file path.",
+      "min_agent": "1.0.0"
+    },
+    "device_control": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/device_control.py",
+      "checksum": "sha256:bc5b3f03ec44b2278c84d6aabbce107fdbb54d2c4b39c331e013821b1266fb4e",
+      "platforms": [
+        "android"
+      ],
+      "description": "Toggle device flashlight. Args: state (",
+      "min_agent": "1.0.0"
+    },
+    "media_control": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/media_control.py",
+      "checksum": "sha256:edc15a6792a3971459741fec03bddbf663c362ea31abb62e8cdc09344c842074",
+      "platforms": [
+        "android"
+      ],
+      "description": "Control Android media playback. Args: action (",
+      "min_agent": "1.0.0"
+    },
+    "screen_capture": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/screen_capture.py",
+      "checksum": "sha256:18dab51781c1e941805e6a82835b7eff54db63dd84e7c689f7772c43e039f3f6",
+      "platforms": [
+        "android"
+      ],
+      "description": "Take a screenshot of the Android screen. Returns the file path.",
+      "min_agent": "1.0.0"
+    },
+    "sms": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/sms.py",
+      "checksum": "sha256:20a3f4e9354551ca38083dfd94691d5bf15b8ee0514f29ed56d0d16e2a42e0ac",
+      "platforms": [
+        "android"
+      ],
+      "description": "Read SMS messages. Args: limit (default 10), inbox_type (",
+      "min_agent": "1.0.0"
+    },
+    "termux_notify": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/termux_notify.py",
+      "checksum": "sha256:31287585806e000122bacc7acd0a280b8c35ef52cedb234143fe7eb916470333",
+      "platforms": [
+        "android"
+      ],
+      "description": "Speak text aloud using Android Text-to-Speech. Args: text (str), language (str o",
+      "min_agent": "1.0.0"
+    },
+    "tts_speak": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/tts_speak.py",
+      "checksum": "sha256:cc31d220b4ebbb0e927241d71d3ab8cbd326529c6981951c1ecaacb4fc5f7b6f",
+      "platforms": [
+        "android"
+      ],
+      "description": "Speak text aloud on the Android device. Args: text (str), rate (float 0.5-2.0), ",
+      "min_agent": "1.0.0"
+    },
+    "wifi_scan": {
+      "category": "android",
+      "version": "1.0.0",
+      "file": "android/wifi_scan.py",
+      "checksum": "sha256:b2b0a1a4ec2ceb50bd0b1f122eb9aa02724826688af10d69f94f9b6489b14ce4",
+      "platforms": [
+        "android"
+      ],
+      "description": "Scan for nearby WiFi networks. Returns SSIDs, signal strength, and security.",
+      "min_agent": "1.0.0"
+    },
+    "apt_manage": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/apt_manage.py",
+      "checksum": "sha256:b9d279792140ecc060bd05a972af153a599942b78a9be01ca90ba0ef988d99f8",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Install a package via apt. Args: package (str).",
+      "min_agent": "1.0.0"
+    },
+    "cron_manage": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/cron_manage.py",
+      "checksum": "sha256:9fb50d5421e82b78544fd5432f06d3ea33ead52a4930da025882eda6a0101cd5",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Cron Manage",
+      "min_agent": "1.0.0"
+    },
+    "disk_analyze": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/disk_analyze.py",
+      "checksum": "sha256:909ef4a19e227af05382980151b167367bc0cde777f7417ed06b41915a3cfebd",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Disk Analyze",
+      "min_agent": "1.0.0"
+    },
+    "docker_ops": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/docker_ops.py",
+      "checksum": "sha256:59cd45f1195ebb771afe0b8196243d61a1090ea3f6d8516c4c7f69d98c50906e",
+      "platforms": [
+        "linux"
+      ],
+      "description": "List Docker containers and images. Args: what (",
+      "min_agent": "1.0.0"
+    },
+    "env_manage": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/env_manage.py",
+      "checksum": "sha256:c388af6e1956a90ecfae85009bf7089ca8ef93193d47a816b65d0093498ff42d",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Env Manage",
+      "min_agent": "1.0.0"
+    },
+    "log_tail": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/log_tail.py",
+      "checksum": "sha256:e201d4229beb447e551e8624bc90f0f44e610ea262089883c8e4eb9dcea4240c",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Log Tail",
+      "min_agent": "1.0.0"
+    },
+    "nginx_manage": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/nginx_manage.py",
+      "checksum": "sha256:50b6f30545965210879f2d86d342705e5658adeb255f1491b9ffc77fcd6d66d9",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Manage Nginx. Args: action (",
+      "min_agent": "1.0.0"
+    },
+    "process_monitor": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/process_monitor.py",
+      "checksum": "sha256:bb467d2000d0305550dd46531f2ad45e3f789dfd6e57852ac6c491ed8eb81f6c",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Process Monitor",
+      "min_agent": "1.0.0"
+    },
+    "python_env": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/python_env.py",
+      "checksum": "sha256:ba63cd39a3bd15660186a190090463efa612b054eae3696fcba93f559020db27",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Python Env",
+      "min_agent": "1.0.0"
+    },
+    "ssh_exec": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/ssh_exec.py",
+      "checksum": "sha256:40ef4b56f3b93fb95eb77904724ef01ecbce1eec946c027d4ddb36dd65dbc857",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Ssh Exec",
+      "min_agent": "1.0.0"
+    },
+    "systemd": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/systemd.py",
+      "checksum": "sha256:14e4867b2c70f5454be77a148514ee36cea1a880eb84ac59ffeb528eb4158032",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Manage a systemd service. Args: service (str), action (",
+      "min_agent": "1.0.0"
+    },
+    "ufw_firewall": {
+      "category": "linux",
+      "version": "1.0.0",
+      "file": "linux/ufw_firewall.py",
+      "checksum": "sha256:8cc4e492c4237039fc85cf3448b9092c399e89531fd2f9c67580d0a535665302",
+      "platforms": [
+        "linux"
+      ],
+      "description": "Ufw Firewall",
+      "min_agent": "1.0.0"
+    },
+    "event_log": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/event_log.py",
+      "checksum": "sha256:02aef829b36a8ef0180d595b316e55ceab2a54f386a6bc7a3623ed28b5a36920",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Read Windows Event Log. Args: log (",
+      "min_agent": "1.0.0"
+    },
+    "powershell": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/powershell.py",
+      "checksum": "sha256:aa6d39118890a5ae51279aa7243d123033ca2f2537bb7e09c31214fc79dcb826",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Run a PowerShell command on Windows. Args: command (str).",
+      "min_agent": "1.0.0"
+    },
+    "registry_read": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/registry_read.py",
+      "checksum": "sha256:aa7ae4b88920719cfe7a478a5802c05642d4e43a7383f18facdc17063160d3c2",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Read a Windows Registry key. Args: key (str, e.g. ",
+      "min_agent": "1.0.0"
+    },
+    "windows_info": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/windows_info.py",
+      "checksum": "sha256:8c02f56e9aa27d2fd2107c64f10780f04e04952834e13cfc8293000069da93d1",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Get Windows system information: OS, CPU, RAM, disk.",
+      "min_agent": "1.0.0"
+    },
+    "windows_notify": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/windows_notify.py",
+      "checksum": "sha256:9f9eb7717479c5d9b4fd5c4757127b9886f87f055ce4a57cf0d6831dd363ad7c",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Send a Windows toast notification. Args: title (str), message (str), duration (",
+      "min_agent": "1.0.0"
+    },
+    "windows_services": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/windows_services.py",
+      "checksum": "sha256:d94f0283d4aebd52f5ec4cb6066a45ce24be21828cc5c9585b919b8ac2703dee",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Manage Windows services. Args: action (",
+      "min_agent": "1.0.0"
+    },
+    "wsl_exec": {
+      "category": "windows",
+      "version": "1.0.0",
+      "file": "windows/wsl_exec.py",
+      "checksum": "sha256:65bca64b4b24088b84026822d8cde0a43ee0f44ef0c3c8ec1fbc566004c2ec97",
+      "platforms": [
+        "windows"
+      ],
+      "description": "Run a bash command inside WSL from Windows. Args: command (str), distro (str opt",
+      "min_agent": "1.0.0"
+    },
+    "applescript": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/applescript.py",
+      "checksum": "sha256:978b4460fc51596b42d61d1357158b0b98c0a29c365810ed22e8cc6d3ba4b7b5",
+      "platforms": [
+        "macos"
+      ],
+      "description": "Run an AppleScript command on macOS. Args: script (str).",
+      "min_agent": "1.0.0"
+    },
+    "brew": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/brew.py",
+      "checksum": "sha256:17f17b7bf90c802d6dd6b6cd9f54744d02f29dc6021c1026abec21c15e3449e9",
+      "platforms": [
+        "macos"
+      ],
+      "description": "Install a Homebrew package. Args: package (str), cask (bool, for GUI apps).",
+      "min_agent": "1.0.0"
+    },
+    "disk_util_mac": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/disk_util_mac.py",
+      "checksum": "sha256:8f5fade5e6b8eb898fe462c1c0145a1b079c5a703e4f4a8b1998e9b0dea50f6c",
+      "platforms": [
+        "macos"
+      ],
+      "description": "macOS disk and volume information. Args: action (",
+      "min_agent": "1.0.0"
+    },
+    "launchctl": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/launchctl.py",
+      "checksum": "sha256:d6c3657d561811d8ceae15b7b6af97f7cdb88cf6311ef59e224f38133358a4dc",
+      "platforms": [
+        "macos"
+      ],
+      "description": "Manage macOS launch agents/daemons. Args: action (",
+      "min_agent": "1.0.0"
+    },
+    "open_url_mac": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/open_url_mac.py",
+      "checksum": "sha256:97d8e9629d9cff41ff306f4bac20d938b2a44489708733a683f4619674f270dd",
+      "platforms": [
+        "macos"
+      ],
+      "description": "Open a URL or file with the default app on macOS. Args: target (str URL or path)",
+      "min_agent": "1.0.0"
+    },
+    "pbclipboard": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/pbclipboard.py",
+      "checksum": "sha256:df7589484e0378dcee0b068ee03a9995935ffe3467c5160c4492ea67df99d283",
+      "platforms": [
+        "macos"
+      ],
+      "description": "Read or write the macOS clipboard. Args: text (str opt \u2014 omit to read).",
+      "min_agent": "1.0.0"
+    },
+    "screen_capture_mac": {
+      "category": "macos",
+      "version": "1.0.0",
+      "file": "macos/screen_capture_mac.py",
+      "checksum": "sha256:6f258074b02cf8f6ba3506341d689ac314ea6004bdf73f6cd63659c59a7822e5",
+      "platforms": [
+        "macos"
+      ],
+      "description": "Take a screenshot on macOS. Args: window_only (bool), include_cursor (bool).",
+      "min_agent": "1.0.0"
+    },
+    "markdown_render": {
+      "category": "data",
+      "version": "1.0.0",
+      "file": "data/markdown_render.py",
+      "checksum": "sha256:ec67aa2a5605a9e5a0f71febc7628e3404197c67e19a2ce4ad42747b80c0ed3e",
+      "platforms": [
+        "all"
+      ],
+      "description": "Markdown Render",
+      "min_agent": "1.0.0"
+    },
+    "pandas_query": {
+      "category": "data",
+      "version": "1.0.0",
+      "file": "data/pandas_query.py",
+      "checksum": "sha256:78c8a3753fe5fd7ab7c623f53357b87c7c087f545c066f464892155a5b1d79fd",
+      "platforms": [
+        "all"
+      ],
+      "description": "Pandas Query",
+      "min_agent": "1.0.0"
+    },
+    "sqlite_manager": {
+      "category": "data",
+      "version": "1.0.0",
+      "file": "data/sqlite_manager.py",
+      "checksum": "sha256:226b4f54bcb1ba441e42689aaa2db1db59c898bae121a0e9bad50db1b6421c03",
+      "platforms": [
+        "all"
+      ],
+      "description": "Sqlite Manager",
+      "min_agent": "1.0.0"
+    },
+    "xml_parse": {
+      "category": "data",
+      "version": "1.0.0",
+      "file": "data/xml_parse.py",
+      "checksum": "sha256:f549619ac77e142a335482585b611ae319fffe2ede583da7580133c7575604f3",
+      "platforms": [
+        "all"
+      ],
+      "description": "Xml Parse",
+      "min_agent": "1.0.0"
+    },
+    "yaml_tool": {
+      "category": "data",
+      "version": "1.0.0",
+      "file": "data/yaml_tool.py",
+      "checksum": "sha256:bde9a7ccfa3110d3499dde97aac139ec40cc74602750a300a52b1ddfce56b0ba",
+      "platforms": [
+        "all"
+      ],
+      "description": "Yaml Tool",
+      "min_agent": "1.0.0"
+    },
+    "discord_send": {
+      "category": "comms",
+      "version": "1.0.0",
+      "file": "comms/discord_send.py",
+      "checksum": "sha256:20fe194a4db1d20b13e306daaf744164cc6f4954eb60ef74c0764e5a17717f81",
+      "platforms": [
+        "all"
+      ],
+      "description": "Discord Send",
+      "min_agent": "1.0.0"
+    },
+    "ntfy_send": {
+      "category": "comms",
+      "version": "1.0.0",
+      "file": "comms/ntfy_send.py",
+      "checksum": "sha256:0864d4319a5e1eca022649cb35e05f8c8a39372235c03a3b7a4b0f7da8799bed",
+      "platforms": [
+        "all"
+      ],
+      "description": "Ntfy Send",
+      "min_agent": "1.0.0"
+    },
+    "slack_send": {
+      "category": "comms",
+      "version": "1.0.0",
+      "file": "comms/slack_send.py",
+      "checksum": "sha256:e30776a63cd409642ba6dfcf7398a3fa011d3df7de6620bb0029d63005d64daf",
+      "platforms": [
+        "all"
+      ],
+      "description": "Slack Send",
+      "min_agent": "1.0.0"
+    }
+  }
+}
