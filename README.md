@@ -1,6 +1,6 @@
 # nexara-skills
 
-**Official skill warehouse for [Nexara Agent V1](https://github.com/nexara-agent/nexara)**
+**Official skill warehouse for [Nexara Agent V1](https://github.com/NexaraAI/Nexara-agent)**
 
 Skills are Python modules fetched by the Nexara agent at startup — only skills matching the detected platform are loaded. No Android skills on Linux. No Linux skills on Android. Token-efficient by design.
 
