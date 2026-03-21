@@ -33,6 +33,7 @@
       "weather",
       "web_scrape",
       "web_search",
+      "speedtest",
       "webhook",
       "alarm_set",
       "battery",
@@ -918,6 +919,17 @@
         "all"
       ],
       "description": "Slack Send",
+      "min_agent": "1.0.0"
+    },
+    "speedtest": {
+      "category": "core",
+      "version": "1.0.0",
+      "file": "core/speedtest.py",
+      "checksum": "sha256:7231691d965d620ac14ca9f5babfd172272e9fcb5a78cc128bbc774dd8faade3",
+      "platforms": [
+        "all"
+      ],
+      "description": "Run an internet speed test. Returns download/upload Mbit/s, ping, and server info.",
       "min_agent": "1.0.0"
     }
   }
