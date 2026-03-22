@@ -19,7 +19,21 @@ WHITELIST: frozenset[str] = frozenset({
     "mkdir", "touch", "cp", "mv", "chmod",
     "ping", "curl", "wget", "nc", "nslookup", "dig",
     "tar", "zip", "unzip", "gzip", "gunzip",
-    "python3", "pip", "pip3", "git",
+    "python3", "python", "pip", "pip3", "git",
+    "node", "npm", "npx", "yarn",
+    "java", "javac", "mvn", "gradle",
+    "go", "cargo", "rustc",
+    # Package managers — sudo prefix handled below
+    "sudo", "apt", "apt-get", "apt-cache", "dpkg", "snap",
+    "brew", "pkg",
+    # Process/system
+    "kill", "killall", "nice", "nohup", "screen", "tmux",
+    "systemctl", "journalctl", "service",
+    # Network
+    "ssh", "scp", "rsync", "curl", "wget",
+    "docker", "docker-compose", "kubectl",
+    "crontab", "env", "printenv", "id", "groups",
+    "lsof", "netstat", "ss", "ip", "ifconfig", "hostname",
     # Android / Termux
     "am", "pm", "termux-open",
     "termux-battery-status", "termux-brightness", "termux-camera-photo",
@@ -31,11 +45,6 @@ WHITELIST: frozenset[str] = frozenset({
     "termux-toast", "termux-torch", "termux-tts-speak",
     "termux-vibrate", "termux-volume", "termux-wallpaper",
     "termux-wifi-connectioninfo", "termux-wifi-enable", "termux-wifi-scaninfo",
-    # Linux
-    "systemctl", "journalctl", "apt", "apt-get", "dpkg",
-    "docker", "docker-compose", "ssh", "scp", "rsync",
-    "crontab", "env", "printenv", "id", "groups",
-    "lsof", "netstat", "ss", "ip", "ifconfig",
 })
 
 BLOCKED_PATTERNS: list[str] = [
@@ -69,12 +78,18 @@ class CommandSkill(BaseSkill):
         except ValueError as exc:
             return SkillResult(success=False, output="", error=f"Parse error: {exc}")
 
-        if root_cmd not in WHITELIST:
+        # Allow "sudo <cmd>" if both sudo and the real command are whitelisted
+        effective_cmd = root_cmd
+        if root_cmd == "sudo" and len(parts) > 1:
+            effective_cmd = parts[1]
+
+        if effective_cmd not in WHITELIST:
             return SkillResult(
                 success=False, output="",
                 error=(
-                    f"`{root_cmd}` is not in the command whitelist. "
-                    "Add it in core/command.py WHITELIST."
+                    f"`{effective_cmd}` is not in the command whitelist. "
+                    "Use apt_install skill for package installation, "
+                    "or add the command to core/command.py WHITELIST."
                 ),
             )
 
